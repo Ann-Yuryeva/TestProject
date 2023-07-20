@@ -1,18 +1,20 @@
-class Solution {
+class RichestCustomerWealth {
     public static void main(String[] args) {
-        int[][] accounts = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-        System.out.println(maximumWealth(accounts));
+//        int[][] accounts = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+//        System.out.println(maximumWealth(accounts));
+            NumberOfSteps n = new NumberOfSteps();
+            n.numberOfSteps(8);
     }
 
     public static int maximumWealth(int[][] accounts) {
         int max = 0;
-        for (int i = 0; i < accounts.length; i++) {
+        for (int[] account : accounts) {
             int sum = 0;
-            for (int j = 0; j < accounts[i].length; j++) {
+            for (int i : account) {
 //                System.out.print("[" + i + ", " + j + "]");
                 System.out.println("sum " + sum);
-                System.out.println("accounts " + accounts[i][j]);
-                System.out.println(sum += accounts[i][j]);
+                System.out.println("accounts " + i);
+                System.out.println(sum += i);
                 System.out.println();
             }
             System.out.println();
