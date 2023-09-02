@@ -1,1 +1,5 @@
 test/
+/shelf/
+/workspace.xml
+/*.class
+*.class
